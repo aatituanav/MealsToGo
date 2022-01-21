@@ -1,23 +1,13 @@
 
-import { SafeAreaView, StyleSheet, Platform, Text, View, StatusBar } from 'react-native';
-
-
+import { SafeAreaView, StyleSheet, StatusBar } from 'react-native';
+import { RestaurantsScreen } from './src/features/restaurants/screens/restaurants.screen';
 
 export default function App() {
   return (
     <>
-      <SafeAreaView style={{ flex: 1, marginTop: StatusBar.currentHeight }}>
-        <View style={{ padding: 16, backgroundColor: 'green' }} >
-          <Text>Buscar</Text>
-        </View>
-        <View style={{ flex: 1, padding: 16, backgroundColor: 'blue' }}>
-          <Text>List</Text>
-        </View>
-      </SafeAreaView>
+      <RestaurantsScreen />
     </>
   );
 }
 
-const styles = StyleSheet.create({
 
-});
