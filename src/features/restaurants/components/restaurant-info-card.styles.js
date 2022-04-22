@@ -2,10 +2,12 @@
 import { Card } from "react-native-paper";
 import styled from "styled-components/native";
 import { theme } from "../../../infrastructure/theme/index"
+import { SvgXml } from 'react-native-svg';
 
 
 export const RestaurantCard = styled(Card)`
 background-color: ${theme.colors.bg.secondary};
+margin-bottom: ${(props) => props.theme.space[3]};
 `;
 export const RestaurantCardCover = styled(Card.Cover)`
 padding:${(props) => props.theme.space[3]};
